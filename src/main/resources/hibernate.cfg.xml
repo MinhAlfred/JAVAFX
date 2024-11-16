@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- SQL Server Configuration -->
+		<property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+		<property name="connection.url">jdbc:sqlserver://localhost:1433;DatabaseName=HSF301_KoiOrderingSystem;encrypt=true;trustServerCertificate=true</property>
+		<property name="connection.username">sa</property>
+		<property name="connection.password">12345</property>
+
+		<!-- Hibernate Settings -->
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+
+		<!-- Entity Mappings -->
+		<mapping class="org.example.hsf301.pojos.Account" />
+		<mapping class="org.example.hsf301.pojos.BookingKoiDetail" />
+		<mapping class="org.example.hsf301.pojos.Bookings" />
+		<mapping class="org.example.hsf301.pojos.BookingTourDetail" />
+		<mapping class="org.example.hsf301.pojos.Delivery" />
+		<mapping class="org.example.hsf301.pojos.DeliveryHistory" />
+		<mapping class="org.example.hsf301.pojos.Deposit" />
+		<mapping class="org.example.hsf301.pojos.Koi" />
+		<mapping class="org.example.hsf301.pojos.KoiOfFarm" />
+		<mapping class="org.example.hsf301.pojos.KoiFarms" />
+		<mapping class="org.example.hsf301.pojos.Quotations" />
+		<mapping class="org.example.hsf301.pojos.TourDetail" />
+		<mapping class="org.example.hsf301.pojos.Tours" />
+
+	</session-factory>
+
+</hibernate-configuration>  

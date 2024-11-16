@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  prefHeight="400.0" prefWidth="600.0">
+
+  <Label layoutX="14.0" layoutY="14.0" text="Welcome to the My Profile Page!"/>
+  <!-- Title label -->
+  <!-- Profile Details -->
+  <VBox layoutX="20.0" layoutY="60.0" spacing="10">
+    <!-- First Name -->
+    <HBox spacing="10">
+      <Label text="First Name:" style="-fx-font-weight: bold;"/>
+      <Label fx:id="firstNameLabel"/>
+    </HBox>
+    <!-- Last Name -->
+    <HBox spacing="10">
+      <Label text="Last Name:" style="-fx-font-weight: bold;"/>
+      <Label fx:id="lastNameLabel"/>
+    </HBox>
+    <!-- Username -->
+    <HBox spacing="10">
+      <Label text="Username:" style="-fx-font-weight: bold;"/>
+      <Label fx:id="usernameLabel"/>
+    </HBox>
+    <!-- Role -->
+    <HBox spacing="10">
+      <Label text="Role:" style="-fx-font-weight: bold;"/>
+      <Label fx:id="roleLabel"/>
+    </HBox>
+    <!-- Password -->
+    <HBox spacing="10">
+      <Label text="Password:" style="-fx-font-weight: bold;"/>
+      <Label fx:id="passwordLabel"/>
+    </HBox>
+    <!-- Buttons -->
+    <HBox spacing="10" alignment="CENTER">
+      <Button fx:id="editButton" text="Edit"/>
+      <Button fx:id="deleteButton" text="Delete"/>
+    </HBox>
+  </VBox>
+
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="544.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hsf301.controllers.DeliveryCheckout">
+    <children>
+         <Label layoutX="264.0" layoutY="22.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Checkout Delivery" />
+
+         <!-- Submit Button -->
+         <Button layoutX="296.0" layoutY="500.0" onAction="#confirmOrder" prefHeight="29.0" prefWidth="89.0" style="-fx-font-size: 14px;" text="Confirm" />
+          <TextField fx:id="txtCustomerName" layoutX="279.0" layoutY="85.0" prefWidth="300.0" promptText="Enter Customer Name" />
+          <Label layoutX="135.0" layoutY="89.0" text="Customer Name:" />
+          <Label layoutX="136.0" layoutY="130.0" text="Receive Date:" />
+          <TextField fx:id="txtremain" layoutX="279.0" layoutY="167.0" prefWidth="300.0" promptText="Enter Remain Amount" />
+          <Label layoutX="135.0" layoutY="171.0" text="Remain Amount:" />
+          <Label layoutX="136.0" layoutY="209.0" text="Address:" />
+          <Label layoutX="133.0" layoutY="277.0" text="Status" />
+          <Label layoutX="132.0" layoutY="328.0" text="Delivery Staff" />
+          <DatePicker fx:id="deliveryDatePicker" layoutX="279.0" layoutY="126.0" prefHeight="25.0" prefWidth="300.0" />
+          <TextArea fx:id="txtdescription" layoutX="279.0" layoutY="368.0" prefHeight="50.0" prefWidth="300.0" promptText="Health koi description" />
+          <Label layoutX="132.0" layoutY="375.0" text="Health Koi Description:" />
+          <Label layoutX="135.0" layoutY="439.0" text="Reason" />
+      <TextField fx:id="txtdeliverystaff" layoutX="279.0" layoutY="324.0" prefWidth="300.0" promptText="Enter address" />
+      <TextField fx:id="txtpayment" layoutX="279.0" layoutY="273.0" prefWidth="300.0" promptText="Enter address" />
+      <TextArea fx:id="txtaddress" layoutX="279.0" layoutY="209.0" prefHeight="50.0" prefWidth="300.0" promptText="Health koi description" />
+      <TextArea fx:id="txtreason" layoutX="279.0" layoutY="439.0" prefHeight="50.0" prefWidth="300.0" promptText="Health koi description" />
+    </children>
+</AnchorPane>

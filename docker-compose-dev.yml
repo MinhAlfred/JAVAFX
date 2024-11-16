@@ -1,0 +1,28 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: mysql_db
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=12345
+    volumes:
+      - mssql_data:/var/opt/mssql
+    networks:
+      - mssql_network
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    ports:
+      - "8081:8080"
+    networks:
+      - mssql_network
+
+volumes:
+  mssql_data:
+
+networks:
+  mssql_network:
+    driver: bridge

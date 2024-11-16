@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.ComboBox?>
+<AnchorPane prefHeight="850.0" prefWidth="1450.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hsf301.controllers.DepositController">
+   <children>
+      <TableView fx:id="tbData" layoutY="59.0" prefHeight="338.0" prefWidth="1450.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="Id" />
+            <TableColumn fx:id="depositDate" prefWidth="139.99996185302734" text="Deposit Date" />
+            <TableColumn fx:id="depositAmount" prefWidth="104.00001525878906" text="Deposit Amount" />
+            <TableColumn fx:id="status" prefWidth="136.0" text="Status" />
+            <TableColumn fx:id="remainAmount" prefWidth="158.66665649414062" text="Reamin Amount" />
+            <TableColumn fx:id="deliveryDate" prefWidth="186.66668701171875" text="Delivery Date" />
+            <TableColumn fx:id="shippingfee" prefWidth="222.6666259765625" text="Shipping Fee" />
+            <TableColumn fx:id="shippingAddress" prefWidth="290.00006103515625" text="Shipping Address" />
+            <TableColumn fx:id="bookingId" prefWidth="137.3333740234375" text="Booking Id" />
+         </columns>
+      </TableView>
+      <Label layoutX="686.0" layoutY="14.0" prefHeight="30.0" prefWidth="77.0" text="Deposit" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdd" layoutX="116.0" layoutY="750.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="41.0" prefWidth="119.0" text="Add" />
+      <TextField fx:id="txtshippingfee" layoutX="201.0" layoutY="431.0" prefHeight="25.0" prefWidth="278.0" />
+      <TextField fx:id="txtdepositPercentage" layoutX="819.0" layoutY="431.0" prefHeight="25.0" prefWidth="278.0" />
+      <Label layoutX="27.0" layoutY="433.0" text="Shipping fee">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="495.0" text="Delivery Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="659.0" layoutY="495.0" text="Shipping address">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="658.0" layoutY="433.0" text="Deposit Percentage">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtDeliveryDate" layoutX="201.0" layoutY="493.0" prefHeight="25.0" prefWidth="278.0" />
+      <TextArea fx:id="txtShippingaddress" layoutX="814.0" layoutY="495.0" prefHeight="91.0" prefWidth="278.0" />
+      <Button fx:id="btnUpdate" layoutX="289.0" layoutY="750.0" mnemonicParsing="false" onAction="#btnUpdateAction" prefHeight="41.0" prefWidth="119.0" text="Update" />
+      <Label layoutX="27.0" layoutY="557.0" text="Booking Id">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancel" layoutX="460.0" layoutY="750.0" mnemonicParsing="false" onAction="#btnCancelAction" prefHeight="41.0" prefWidth="119.0" text="Cancel" />
+      <ComboBox fx:id="txtBookingId" layoutX="201.0" layoutY="555.0" prefHeight="25.0" prefWidth="278.0" />
+   </children>
+</AnchorPane>

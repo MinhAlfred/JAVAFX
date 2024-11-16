@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hsf301.controllers.SignupController">
+  <left>
+    <AnchorPane prefHeight="634.0" prefWidth="301.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+      <children>
+        <ImageView fx:id="logoImageView" fitHeight="382.0" fitWidth="270.0" layoutX="16.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../assets/img/koi.png" />
+          </image>
+        </ImageView>
+      </children>
+    </AnchorPane>
+  </left>
+  <center>
+    <AnchorPane prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+      <children>
+        <TextField fx:id="usernameTextField" layoutX="27.0" layoutY="139.0" prefHeight="62.0" prefWidth="442.0" promptText="Username" style="-fx-background-color: #F1F1F1;">
+          <font>
+            <Font size="30.0" />
+          </font>
+        </TextField>
+        <PasswordField fx:id="passwordField" layoutX="29.0" layoutY="497.0" prefHeight="62.0" prefWidth="439.0" promptText="Password" style="-fx-background-color: #F1F1F1;">
+          <font>
+            <Font size="30.0" />
+          </font>
+        </PasswordField>
+        <Button fx:id="submitButton" layoutX="30.0" layoutY="687.0" mnemonicParsing="false" onAction="#submitButtonAction" prefHeight="50.0" prefWidth="436.0" style="-fx-background-color: #121212;" text="Submit" textFill="WHITE">
+          <effect>
+            <Glow />
+          </effect>
+          <cursor>
+            <Cursor fx:constant="HAND" />
+          </cursor>
+          <font>
+            <Font name="System Bold" size="35.0" />
+          </font>
+        </Button>
+        <Label layoutX="155.0" layoutY="6.0" text="Sign up" textFill="#121212">
+          <font>
+            <Font name="Roboto Medium" size="60.0" />
+          </font>
+        </Label>
+        <HBox alignment="CENTER" layoutX="27.0" layoutY="608.0" prefHeight="28.0" prefWidth="234.0" />
+        <Label layoutX="22.0" layoutY="94.0" prefHeight="45.0" prefWidth="336.0" text="Email or Phone number" textFill="#121212">
+          <font>
+            <Font size="25.0" />
+          </font>
+        </Label>
+        <Label layoutX="27.0" layoutY="455.0" text="Password" textFill="#121212">
+          <font>
+            <Font size="25.0" />
+          </font>
+        </Label>
+        <TextField fx:id="firstNameTextField" layoutX="27.0" layoutY="258.0" prefHeight="62.0" prefWidth="442.0" promptText="First name" style="-fx-background-color: #F1F1F1;">
+          <font>
+            <Font size="30.0" />
+          </font>
+        </TextField>
+        <Label layoutX="27.0" layoutY="213.0" prefHeight="45.0" prefWidth="336.0" text="First Name" textFill="#121212">
+          <font>
+            <Font size="25.0" />
+          </font>
+        </Label>
+        <Label layoutX="130.0" layoutY="769.0" text="Already a Member?" textFill="#121212">
+          <font>
+            <Font name="Roboto Light" size="14.0" />
+          </font>
+        </Label>
+        <Button fx:id="loginHere" contentDisplay="TOP" layoutX="277.0" layoutY="762.0" mnemonicParsing="false" onAction="#loginHereAction" prefHeight="34.0" prefWidth="115.0" style="-fx-background-color: transparent;" text="Login here">
+          <cursor>
+            <Cursor fx:constant="HAND" />
+          </cursor>
+          <effect>
+            <Glow />
+          </effect>
+          <font>
+            <Font name="Roboto Medium" size="14.0" />
+          </font>
+        </Button>
+        <TextField fx:id="lastNameTextField" layoutX="27.0" layoutY="383.0" prefHeight="62.0" prefWidth="442.0" promptText="Last name" style="-fx-background-color: #F1F1F1;">
+          <font>
+            <Font size="30.0" />
+          </font>
+        </TextField>
+        <Label layoutX="27.0" layoutY="330.0" prefHeight="45.0" prefWidth="336.0" text="Last Name" textFill="#121212">
+          <font>
+            <Font size="25.0" />
+          </font>
+        </Label>
+        <PasswordField fx:id="confirmPasswordField" layoutX="29.0" layoutY="604.0" prefHeight="62.0" prefWidth="439.0" promptText="Confirm password" style="-fx-background-color: #F1F1F1;">
+          <font>
+            <Font size="30.0" />
+          </font>
+        </PasswordField>
+        <Label layoutX="30.0" layoutY="568.0" text="Confirm Password" textFill="#121212">
+          <font>
+            <Font size="25.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>

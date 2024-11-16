@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="421.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hsf301.controllers.BookingTourDetailSaleStaffController">
+   <children>
+      <Label layoutX="283.0" layoutY="29.0" prefHeight="26.0" prefWidth="137.0" text="Book Tour Detail">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblBookingTour" layoutX="-2.0" layoutY="92.0" prefHeight="245.0" prefWidth="686.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="participant" prefWidth="167.99996185302734" text="Participant" />
+            <TableColumn fx:id="totalamount" prefWidth="153.33338928222656" text="Total Amount" />
+            <TableColumn fx:id="bookingid" minWidth="5.33331298828125" prefWidth="143.33334350585938" text="Booking id" />
+            <TableColumn fx:id="tourid" minWidth="5.33331298828125" prefWidth="145.33331298828125" text="Tour id" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnExit" layoutX="268.0" layoutY="352.0" mnemonicParsing="false" onAction="#btnExitAction" prefHeight="33.0" prefWidth="129.0" text="Exit" />
+   </children>
+</AnchorPane>

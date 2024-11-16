@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hsf301.controllers.QuotationManagementController">
+   <children>
+      <TableView fx:id="tbData" layoutY="63.0" prefHeight="354.0" prefWidth="1155.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="81.0" text="ID" />
+            <TableColumn fx:id="bookingID" prefWidth="166.0" text="BookingID" />
+            <TableColumn fx:id="description" prefWidth="263.0" text="Description" />
+            <TableColumn fx:id="staffName" prefWidth="227.0" text="StaffName" />
+            <TableColumn fx:id="approveStatus" prefWidth="143.0" text="Approve Status" />
+            <TableColumn fx:id="approveTime" prefWidth="139.0" text="Approve Time" />
+            <TableColumn fx:id="amount" prefWidth="135.0" text="Amount" />
+         </columns>
+      </TableView>
+      <Label layoutX="475.0" layoutY="21.0" prefHeight="25.0" prefWidth="206.0" text="Quotation Management">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnConfirm" layoutX="442.0" layoutY="458.0" mnemonicParsing="false" onAction="#btnConfirmOnAction" prefHeight="31.0" prefWidth="86.0" text="Confirm" />
+      <Button fx:id="btnCancel" layoutX="859.0" layoutY="455.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="37.0" prefWidth="86.0" text="Cancel" />
+      <Label id="bookingID" layoutX="113.0" layoutY="441.0" prefHeight="17.0" prefWidth="66.0" text="QuotationID" />
+      <ComboBox fx:id="txtQuotationID" layoutX="214.0" layoutY="437.0" prefWidth="150.0" />
+      <Label id="bookingID" layoutX="113.0" layoutY="487.0" prefHeight="17.0" prefWidth="86.0" text="ApproveStatus" />
+      <ComboBox fx:id="txtApproveStatus" layoutX="214.0" layoutY="483.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
